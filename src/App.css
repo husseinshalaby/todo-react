@@ -2,37 +2,99 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper{
+  background-color: #fff;
+  height: 800px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  margin: 37px 0 5px 0;
+}
+.category-select {
+  margin: 20px 0;  
+}
+ul {
+  list-style: none;
+  padding-top: 14px;
+}
+.child{
+  background: #eee;
+  padding: 10px;
+  display: grid;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  grid-template-areas: 'p p p p p p p p p p p p p p p p p p p p p p p p p p show del done'
+                       'd d d d d d d d d d d d d d d d d d d d d d d d d d d d d';
+}
+.todo-name  {
+  grid-area: p;
+}
+.todo-details { 
+  grid-area: d;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: grid;
+  background-color: #FCF8E3;
+  height: 100px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 20px
+}
+.deleteButton {
+  grid-area: del
+}
+.doneButton {
+  grid-area: done;
+}
+.showDetailsButton {
+  grid-area: show;
+}
+.doneTodo {
+  background: #DFF0D8;
+}
+.doneTodo p {
+  text-decoration: line-through;
+  color: steelblue;
+}
+
+.filtering{
+  display: flex;
+}
+.filtering div {
+  width: 40%;
+  margin-top: 20px;
+}
+.filtering select{
+  margin: 15px 15px 15px 32px;
+}
+.sorting{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+  align-items: center
+}
+.filter-button{
+  height: 50px;
+  width: 100px
+}
+.event-bubbling {
+  margin-right: 48px;  
+}
+#submit {
+  font-size: 20px;
+  background-color: #AF7EEB;
 }
