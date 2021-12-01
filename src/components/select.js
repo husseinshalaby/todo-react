@@ -11,7 +11,7 @@ const Select = ({ change, value, defaultOption }) => {
       className="form-select form-select-lg mb-3 select" 
       aria-label=".form-select-lg example" 
       id="category-filter" >
-      <option value="">{defaultOption}</option>
+      <option value=''>{defaultOption}</option>
       <option value="work">Work</option>
       <option value="study">Study</option>
       <option value="sport">Sport</option>
